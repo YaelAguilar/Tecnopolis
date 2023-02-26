@@ -1,9 +1,19 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 function App() {
 
   return(
 
-    <h1>App</h1>
+    <BrowserRouter>
+        <Routes>
+            <Route index element={<Home/>}/>
+        </Routes>
+    </BrowserRouter>
+
+    
 
   );
 }
