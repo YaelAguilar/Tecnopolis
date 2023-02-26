@@ -5,7 +5,7 @@ function ProtectedParentRoute({isLoged}) {
     return(
 
         isLoged ? <Outlet /> : <Navigate to="/login"/>
-
+        
     );
 }
 
